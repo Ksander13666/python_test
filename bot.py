@@ -35,7 +35,7 @@ while 1:
 		mesg1=bot.getUpdates(mesg[0].get('update_id')+1)
 		if TExt.isdigit():
    			g.setup(cookies={'JSESSIONID': 'ENTER YOUR COOKIE'})
-        		g.go('https://jira.mail.ru/browse/HW-'+TExt)
+        		g.go('ENTER SITE'+TExt)
         		task=g.response.body
 			LogYes=re.findall(r'Войти в Jira', task)
 			if LogYes:
