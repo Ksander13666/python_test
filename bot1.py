@@ -8,7 +8,7 @@ import re
 
 token='ENTER YOU TOKEN'
 bot = telebot.TeleBot(token)
-jiraMAIL = JIRA('https://jira.mail.ru', basic_auth=('LOGIN', 'PASS'))
+jiraMAIL = JIRA('https://JIRA', basic_auth=('LOGIN', 'PASS'))
 
 
 @bot.message_handler(commands=['help', 'start'])
